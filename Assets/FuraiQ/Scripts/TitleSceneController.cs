@@ -1,3 +1,7 @@
+using System;
+using Cysharp.Threading.Tasks;
+using Cysharp.Threading.Tasks.Linq;
+using Cysharp.Threading.Tasks.Triggers;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -13,7 +17,13 @@ namespace FuraiQ
 
         void Start()
         {
-            Instantiate(rootUIPrefab);
+            var root = Instantiate(rootUIPrefab);
+            root.rootVisualElement.Q<Button>("StartButton").OnClickedAsync()
+                .Subscribe(_ =>
+                {
+                    Debug.Log("StartButton Clicked");
+                })
+                .AddTo(this.destroyCancellationToken);
         }
     }
 }
