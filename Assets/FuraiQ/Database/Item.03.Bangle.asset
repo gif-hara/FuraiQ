@@ -9,13 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea9a8e5ec1aa157409e31e81d57ff45f, type: 3}
-  m_Name: Binary.10101
+  m_Script: {fileID: 11500000, guid: 943fd4a767790ee4eba00818ffeaf9ca, type: 3}
+  m_Name: Item.03.Bangle
   m_EditorClassIdentifier: 
-  question: "\u30C6\u30B9\u30C8\u554F\u984C\u3067\u3059\u304B\uFF1F"
-  leftOption:
-    isCorrect: 1
-    message: "\u306F\u3044"
-  rightOption:
-    isCorrect: 0
-    message: "\u3044\u3044\u3048"
+  items: []

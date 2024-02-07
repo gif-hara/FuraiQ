@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea9a8e5ec1aa157409e31e81d57ff45f, type: 3}
+  m_Name: QuizBuilder.Binary.10101
+  m_EditorClassIdentifier: 
+  question: "\u30C6\u30B9\u30C8\u554F\u984C\u3067\u3059\u304B\uFF1F"
+  leftOption:
+    isCorrect: 1
+    message: "\u306F\u3044"
+  rightOption:
+    isCorrect: 0
+    message: "\u3044\u3044\u3048"

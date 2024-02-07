@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace FuraiQ
 {
@@ -22,5 +23,34 @@ namespace FuraiQ
         /// アイテムの売値
         /// </summary>
         public int sellPrice;
+
+        /// <summary>
+        /// 常に識別されているか
+        /// </summary>
+        public bool alwaysIdentified;
+
+        /// <summary>
+        /// 祝福されている場合の買値
+        /// </summary>
+        public int buyPriceBlessing => buyPrice * 2;
+
+        /// <summary>
+        /// 祝福されている場合の売値
+        /// </summary>
+        public int sellPriceBlessing => sellPrice * 2;
+
+        /// <summary>
+        /// 呪われている場合の買値
+        /// </summary>
+        public int buyPriceCurse => Mathf.FloorToInt(buyPrice * 0.87f);
+
+        /// <summary>
+        /// 呪われている場合の売値
+        /// </summary>
+        public int sellPriceCurse => Mathf.FloorToInt(sellPrice * 0.87f);
+
+        public int[] BuyPrices => new int[] { buyPrice, buyPriceBlessing, buyPriceCurse };
+
+        public int[] SellPrices => new int[] { sellPrice, sellPriceBlessing, sellPriceCurse };
     }
 }
