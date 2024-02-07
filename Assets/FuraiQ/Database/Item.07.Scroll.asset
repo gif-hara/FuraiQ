@@ -157,3 +157,7 @@ MonoBehaviour:
     buyPrice: 10000
     sellPrice: 4000
     alwaysIdentified: 0
+  - name: "\u306C\u308C\u305F\u5DFB\u7269"
+    buyPrice: 200
+    sellPrice: 80
+    alwaysIdentified: 1

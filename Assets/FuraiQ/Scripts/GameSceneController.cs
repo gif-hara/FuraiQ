@@ -20,22 +20,30 @@ namespace FuraiQ
         [SerializeField]
         private QuizBuilder quizBuilder;
 
+        [SerializeField]
+        private string headerFormat;
+
         private UIDocument rootUI;
 
         async void Start()
         {
             rootUI = Instantiate(rootUIPrefab);
+            var quizNumber = 1;
             while (true)
             {
-                await ApplyQuizAsync(quizBuilder.Build());
+                await ApplyQuizAsync(quizBuilder.Build(), quizNumber);
                 await UniTask.Delay(TimeSpan.FromSeconds(1));
+                quizNumber++;
             }
         }
 
-        private UniTask<bool> ApplyQuizAsync(IQuiz quiz)
+        private UniTask<bool> ApplyQuizAsync(IQuiz quiz, int quizNumber)
         {
             var source = new UniTaskCompletionSource<bool>();
             var visualElement = rootUI.rootVisualElement;
+            visualElement
+                .Q<Label>("HeaderLabel")
+                .text = string.Format(headerFormat, quizNumber);
             visualElement
                 .Q<Label>("QuestionLabel")
                 .text = quiz.Question;
