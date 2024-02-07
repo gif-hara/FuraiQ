@@ -1,8 +1,11 @@
+using System;
+
 namespace FuraiQ
 {
     /// <summary>
     /// クイズの選択肢
     /// </summary>
+    [Serializable]
     public sealed class QuizOption
     {
         /// <summary>
