@@ -10,7 +10,7 @@ namespace FuraiQ
         /// <summary>
         /// 問題文
         /// </summary>
-        string Message { get; }
+        string Question { get; }
 
         /// <summary>
         /// 選択肢

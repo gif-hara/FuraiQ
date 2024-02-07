@@ -7,7 +7,7 @@ namespace FuraiQ
     /// </summary>
     public sealed class Quiz : IQuiz
     {
-        public string Message { get; }
+        public string Question { get; }
 
         public List<QuizOption> Options { get; }
 
@@ -25,7 +25,7 @@ namespace FuraiQ
 
         public Quiz(string message, List<QuizOption> options)
         {
-            Message = message;
+            Question = message;
             Options = options;
         }
     }
