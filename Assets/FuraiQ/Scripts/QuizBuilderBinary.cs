@@ -6,8 +6,8 @@ namespace FuraiQ
     /// <summary>
     /// 2択のクイズビルダー
     /// </summary>
-    [CreateAssetMenu(menuName = "FuraiQ/BinaryQuizBuilder")]
-    public sealed class BinaryQuizBuilder : QuizBuilder
+    [CreateAssetMenu(menuName = "FuraiQ/QuizBuilderBinary")]
+    public sealed class QuizBuilderBinary : QuizBuilder
     {
         [SerializeField]
         private string question;

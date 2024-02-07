@@ -6,10 +6,10 @@ using UnityEngine;
 namespace FuraiQ
 {
     /// <summary>
-    /// 2択のクイズビルダー
+    /// 買値のクイズビルダー
     /// </summary>
-    [CreateAssetMenu(menuName = "FuraiQ/BuyPriceQuizBuilder")]
-    public sealed class BuyPriceQuizBuilder : QuizBuilder
+    [CreateAssetMenu(menuName = "FuraiQ/QuizBuilderBuyPrice")]
+    public sealed class QuizBuilderBuyPrice : QuizBuilder
     {
         [SerializeField]
         private string questionFormat;

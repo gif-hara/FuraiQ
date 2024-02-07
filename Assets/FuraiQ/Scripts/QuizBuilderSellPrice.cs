@@ -8,8 +8,8 @@ namespace FuraiQ
     /// <summary>
     /// 売値クイズビルダー
     /// </summary>
-    [CreateAssetMenu(menuName = "FuraiQ/SellPriceQuizBuilder")]
-    public sealed class SellPriceQuizBuilder : QuizBuilder
+    [CreateAssetMenu(menuName = "FuraiQ/QuizBuilderSellPrice")]
+    public sealed class QuizBuilderSellPrice : QuizBuilder
     {
         [SerializeField]
         private string questionFormat;
