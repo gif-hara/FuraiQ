@@ -350,7 +350,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rootUIPrefab: {fileID: 8493052003010268428, guid: ed28c3d08c9f3d0488ed524b8b7ea6b0, type: 3}
   quizOptionVisualTreeAsset: {fileID: 9197481963319205126, guid: ecbcf1152ff7215418d6420f06c7bb52, type: 3}
-  quizBuilder: {fileID: 11400000, guid: fe5db2d1ab4bd3f48956a35a088e64d3, type: 2}
+  quizBuilder: {fileID: 11400000, guid: 817fea3889fd4f34bb576d0c13fdf707, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
