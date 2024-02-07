@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10ae957211dd55d4aacb3d66fb3f526e, type: 3}
-  m_Name: QuizBuilder.BuyPrice.10101
+  m_Name: QuizBuilder.BuyPrice.07
   m_EditorClassIdentifier: 
   questionFormat: "\u8CB7\u5024\u304C{0}\u306E\u5DFB\u7269\u304C\u3042\u308B\u3002\u6B21\u306E\u3046\u3061\u3069\u308C\u304B\uFF1F"
   itemMasterData: {fileID: 11400000, guid: a9fb6f5b5ad8e0241aa94b0fb62a2877, type: 2}

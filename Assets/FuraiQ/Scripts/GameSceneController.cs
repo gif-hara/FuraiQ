@@ -18,7 +18,7 @@ namespace FuraiQ
         private VisualTreeAsset quizOptionVisualTreeAsset;
 
         [SerializeField]
-        private QuizBuilder quizBuilder;
+        private QuizBuilder[] quizBuilders;
 
         [SerializeField]
         private string headerFormat;
@@ -31,6 +31,7 @@ namespace FuraiQ
             var quizNumber = 1;
             while (true)
             {
+                var quizBuilder = quizBuilders[UnityEngine.Random.Range(0, quizBuilders.Length)];
                 await ApplyQuizAsync(quizBuilder.Build(), quizNumber);
                 await UniTask.Delay(TimeSpan.FromSeconds(1));
                 quizNumber++;
