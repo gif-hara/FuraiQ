@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 namespace FuraiQ
 {
@@ -38,7 +40,7 @@ namespace FuraiQ
         /// 祝福されている場合の売値
         /// </summary>
         public int sellPriceBlessing => sellPrice * 2;
-        
+
         /// <summary>
         /// アイテムの特殊な属性リスト
         /// </summary>
@@ -54,8 +56,64 @@ namespace FuraiQ
         /// </summary>
         public int sellPriceCurse => Mathf.FloorToInt(sellPrice * 0.87f);
 
+        /// <summary>
+        /// 通常・祝福・呪いの買値
+        /// </summary>
         public int[] BuyPrices => new int[] { buyPrice, buyPriceBlessing, buyPriceCurse };
 
+        /// <summary>
+        /// 通常・祝福・呪いの売値
+        /// </summary>
         public int[] SellPrices => new int[] { sellPrice, sellPriceBlessing, sellPriceCurse };
+
+        public int[] BuyNumberUsedPrices
+        {
+            get
+            {
+                var numberUsedMin = Array.Find(attributes, x => x.key == "NumberUsedMin");
+                Assert.IsNotNull(numberUsedMin, $"numberUsedMin != null, {name}");
+                var numberUsedMax = Array.Find(attributes, x => x.key == "NumberUsedMax");
+                Assert.IsNotNull(numberUsedMax, $"numberUsedMax != null, {name}");
+                var addBuyPrice = Array.Find(attributes, x => x.key == "AddBuyPrice");
+                Assert.IsNotNull(addBuyPrice, $"addBuyPrice != null, {name}");
+                var numberUserMinInt = numberUsedMin.ParseToInt();
+                var numberUserMaxInt = numberUsedMax.ParseToInt();
+                var addBuyPriceInt = addBuyPrice.ParseToInt();
+                var result = new List<int>();
+                for (var i = numberUserMinInt; i <= numberUserMaxInt; i++)
+                {
+                    var price = buyPrice + i * addBuyPriceInt;
+                    result.Add(price);
+                    result.Add(Mathf.FloorToInt(price * 0.87f));
+                }
+
+                return result.ToArray();
+            }
+        }
+
+        public int[] SellNumberUsedPrices
+        {
+            get
+            {
+                var numberUsedMin = Array.Find(attributes, x => x.key == "NumberUsedMin");
+                Assert.IsNotNull(numberUsedMin, $"numberUsedMin != null, {name}");
+                var numberUsedMax = Array.Find(attributes, x => x.key == "NumberUsedMax");
+                Assert.IsNotNull(numberUsedMax, $"numberUsedMax != null, {name}");
+                var addSellPrice = Array.Find(attributes, x => x.key == "AddSellPrice");
+                Assert.IsNotNull(addSellPrice, $"addSellPrice != null, {name}");
+                var numberUserMinInt = numberUsedMin.ParseToInt();
+                var numberUserMaxInt = numberUsedMax.ParseToInt();
+                var addSellPriceInt = addSellPrice.ParseToInt();
+                var result = new List<int>();
+                for (var i = numberUserMinInt; i <= numberUserMaxInt; i++)
+                {
+                    var price = sellPrice + i * addSellPriceInt;
+                    result.Add(price);
+                    result.Add(Mathf.FloorToInt(price * 0.87f));
+                }
+
+                return result.ToArray();
+            }
+        }
     }
 }
