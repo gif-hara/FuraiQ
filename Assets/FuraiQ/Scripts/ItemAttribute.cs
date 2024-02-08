@@ -9,7 +9,12 @@ namespace FuraiQ
     public sealed class ItemAttribute
     {
         public string key;
-        
+
         public string value;
+
+        public int ParseToInt()
+        {
+            return int.Parse(value);
+        }
     }
 }
