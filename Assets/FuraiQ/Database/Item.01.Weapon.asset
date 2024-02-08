@@ -12,4 +12,337 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 943fd4a767790ee4eba00818ffeaf9ca, type: 3}
   m_Name: Item.01.Weapon
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - name: "\u6728\u5200"
+    buyPrice: 250
+    sellPrice: 100
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 3
+    - key: SkillNumber
+      value: 7
+  - name: "\u9752\u9285\u306E\u592A\u5200"
+    buyPrice: 550
+    sellPrice: 200
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 4
+    - key: SkillNumber
+      value: 6
+  - name: "\u30AB\u30BF\u30CA"
+    buyPrice: 1000
+    sellPrice: 400
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 5
+    - key: SkillNumber
+      value: 5
+  - name: "\u3069\u3046\u305F\u306C\u304D"
+    buyPrice: 1000
+    sellPrice: 880
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 8
+    - key: SkillNumber
+      value: 4
+  - name: "\u525B\u5263\u30DE\u30F3\u30B8\u30AB\u30D6\u30E9"
+    buyPrice: 5500
+    sellPrice: 2200
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 14
+    - key: SkillNumber
+      value: 3
+  - name: "\u706B\u8FC5\u98A8\u9B54\u5200"
+    buyPrice: 16000
+    sellPrice: 6400
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 30
+    - key: SkillNumber
+      value: 10
+  - name: "\u79D8\u5263\u30AB\u30D6\u30E9\u30B9\u30C6\u30AE"
+    buyPrice: 25000
+    sellPrice: 10000
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 50
+    - key: SkillNumber
+      value: 15
+  - name: "\u91D1\u306E\u5263"
+    buyPrice: 3000
+    sellPrice: 1200
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 3
+    - key: SkillNumber
+      value: 10
+  - name: "\u5996\u5200\u304B\u307E\u3044\u305F\u3061"
+    buyPrice: 8400
+    sellPrice: 3360
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 2
+    - key: SkillNumber
+      value: 6
+  - name: "\u30DF\u30CE\u30BF\u30A6\u30ED\u30B9\u306E\u65A7"
+    buyPrice: 6500
+    sellPrice: 2600
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 6
+    - key: SkillNumber
+      value: 4
+  - name: "\u5FC5\u4E2D\u306E\u5263"
+    buyPrice: 0
+    sellPrice: 0
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 0
+    - key: SkillNumber
+      value: 0
+  - name: "\u9023\u6483\u5200"
+    buyPrice: 10000
+    sellPrice: 4000
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 5
+    - key: SkillNumber
+      value: 3
+  - name: "\u6C34\u65AC\u308A\u306E\u5263"
+    buyPrice: 3300
+    sellPrice: 1320
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 6
+    - key: SkillNumber
+      value: 6
+  - name: "\u539F\u59CB\u306E\u65A7"
+    buyPrice: 5000
+    sellPrice: 2000
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 6
+    - key: SkillNumber
+      value: 8
+  - name: "\u30C9\u30E9\u30B4\u30F3\u30AD\u30E9\u30FC"
+    buyPrice: 4000
+    sellPrice: 1600
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 9
+    - key: SkillNumber
+      value: 5
+  - name: "\u4E09\u65E5\u6708\u5200"
+    buyPrice: 3500
+    sellPrice: 1400
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 6
+    - key: SkillNumber
+      value: 6
+  - name: "\u7A7A\u306E\u5203"
+    buyPrice: 3700
+    sellPrice: 1480
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 4
+    - key: SkillNumber
+      value: 4
+  - name: "\u6210\u4ECF\u306E\u30AB\u30DE"
+    buyPrice: 4200
+    sellPrice: 1680
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 5
+    - key: SkillNumber
+      value: 8
+  - name: "\u30C9\u30EC\u30A4\u30F3\u30D0\u30B9\u30BF\u30FC"
+    buyPrice: 3600
+    sellPrice: 1440
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 6
+    - key: SkillNumber
+      value: 3
+  - name: "\u4E00\u30C4\u76EE\u6BBA\u3057"
+    buyPrice: 3200
+    sellPrice: 1280
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 7
+    - key: SkillNumber
+      value: 4
+  - name: "\u65AC\u9244\u5263"
+    buyPrice: 3100
+    sellPrice: 1240
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 6
+    - key: SkillNumber
+      value: 5
+  - name: "\u5DE8\u5927\u30CF\u30EA\u30BB\u30F3"
+    buyPrice: 4200
+    sellPrice: 1680
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 5
+    - key: SkillNumber
+      value: 4
+  - name: "\u56DE\u5FA9\u306E\u5263"
+    buyPrice: 4300
+    sellPrice: 1720
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 2
+    - key: SkillNumber
+      value: 4
+  - name: "\u6843\u307E\u3093\u68D2"
+    buyPrice: 4500
+    sellPrice: 1800
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 4
+    - key: SkillNumber
+      value: 3
+  - name: "\u91D1\u98DF\u3044\u866B\u3053\u3093\u68D2"
+    buyPrice: 6000
+    sellPrice: 2400
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 8
+    - key: SkillNumber
+      value: 4
+  - name: "\u9244\u584A\u306E\u5927\u5263"
+    buyPrice: 5300
+    sellPrice: 2120
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 9
+    - key: SkillNumber
+      value: 3
+  - name: "\u30B9\u30C6\u30FC\u30AD\u30CA\u30A4\u30D5"
+    buyPrice: 5400
+    sellPrice: 2160
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 7
+    - key: SkillNumber
+      value: 5
+  - name: "\u56DB\u30C4\u53C9"
+    buyPrice: 5600
+    sellPrice: 2240
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 6
+    - key: SkillNumber
+      value: 4
+  - name: "\u3081\u3067\u305F\u3044\u718A\u624B"
+    buyPrice: 5700
+    sellPrice: 2280
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 7
+    - key: SkillNumber
+      value: 7
+  - name: "\u3064\u308B\u306F\u3057"
+    buyPrice: 1000
+    sellPrice: 400
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 8
+    - key: SkillNumber
+      value: 1
+  - name: "\u9EC4\u91D1\u306E\u3064\u308B\u306F\u3057"
+    buyPrice: 18000
+    sellPrice: 7200
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 2
+    - key: SkillNumber
+      value: 10
+  - name: "\u6728\u3065\u3061"
+    buyPrice: 1000
+    sellPrice: 400
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 7
+    - key: SkillNumber
+      value: 3
+  - name: "\u6700\u5F37\u30CF\u30F3\u30DE\u30FC"
+    buyPrice: 15000
+    sellPrice: 6000
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 2
+    - key: SkillNumber
+      value: 5
+  - name: "\u7F60\u63A2\u308A\u306E\u68D2"
+    buyPrice: 4400
+    sellPrice: 1760
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 4
+    - key: SkillNumber
+      value: 5
+  - name: "\u304B\u3064\u304A\u3076\u3057"
+    buyPrice: 1800
+    sellPrice: 720
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 6
+    - key: SkillNumber
+      value: 6
+  - name: "\u5C71\u59E5\u5305\u4E01"
+    buyPrice: 4000
+    sellPrice: 1600
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 10
+    - key: SkillNumber
+      value: 7
+  - name: "\u4F7F\u3044\u6368\u3066\u5200"
+    buyPrice: 3000
+    sellPrice: 1200
+    alwaysIdentified: 1
+    attributes:
+    - key: Strength
+      value: 30
+    - key: SkillNumber
+      value: 10

@@ -38,6 +38,11 @@ namespace FuraiQ
         /// 祝福されている場合の売値
         /// </summary>
         public int sellPriceBlessing => sellPrice * 2;
+        
+        /// <summary>
+        /// アイテムの特殊な属性リスト
+        /// </summary>
+        public ItemAttribute[] attributes;
 
         /// <summary>
         /// 呪われている場合の買値
