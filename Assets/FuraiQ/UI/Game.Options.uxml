@@ -1,5 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="Root" style="flex-grow: 1;">
+    <Style src="project://database/Assets/Game.Options.uss?fileID=7433441132597879392&amp;guid=76177e9f35e465e43a1d7e2230c804c8&amp;type=3#Game.Options" />
+    <ui:VisualElement name="Root" class="Option">
         <ui:Button text="Button" name="Button" style="font-size: 24px; -unity-font-definition: url(&apos;project://database/Assets/FuraiQ/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=c337412bba43b344cb4302bf2559dcf0&amp;type=3#NotoSansJP-Regular&apos;); flex-grow: 1; flex-shrink: 1;" />
     </ui:VisualElement>
 </ui:UXML>

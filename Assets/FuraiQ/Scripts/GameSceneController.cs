@@ -60,7 +60,6 @@ namespace FuraiQ
             foreach (var i in quiz.Options)
             {
                 var option = quizOptionVisualTreeAsset.CloneTree();
-                option.style.flexGrow = 1;
                 var button = option.Q<Button>("Button");
                 button.text = i.message;
                 button.OnClickedAsync()
