@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10ae957211dd55d4aacb3d66fb3f526e, type: 3}
-  m_Name: QuizBuilder.BuyPrice.07
+  m_Name: QuizBuilder.BuyPrice.03
   m_EditorClassIdentifier: 
-  questionFormat: "<color=#AAAAFF><size=60>\u8CB7\u5024</size></color>\u304C<color=#EEEE00><size=60>{0}</size></color>\u306E<color=#88EE00><size=60>\u5DFB\u7269</size></color>\u304C\u3042\u308B\u3002\u6B21\u306E\u3046\u3061\u3069\u308C\u304B\uFF1F"
-  itemMasterData: {fileID: 11400000, guid: a9fb6f5b5ad8e0241aa94b0fb62a2877, type: 2}
+  questionFormat: "<color=#AAAAFF><size=60>\u8CB7\u5024</size></color>\u304C<color=#EEEE00><size=60>{0}</size></color>\u306E<color=#AAAAAA><size=60>\u8155\u8F2A</size></color>\u304C\u3042\u308B\u3002\u6B21\u306E\u3046\u3061\u3069\u308C\u304B\uFF1F"
+  itemMasterData: {fileID: 11400000, guid: 724c47121c3ee4b4dbffb1426b03b22e, type: 2}
   optionNumber: 4
