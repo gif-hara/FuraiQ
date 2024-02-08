@@ -12,4 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 943fd4a767790ee4eba00818ffeaf9ca, type: 3}
   m_Name: Item.09.Incense
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - name: 
+    buyPrice: 2000
+    sellPrice: 800
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 2
+    - key: NumberUsedMax
+      value: 4
+    - key: AddBuyPrice
+      value: 0
+    - key: AddSellPrice
+      value: 0

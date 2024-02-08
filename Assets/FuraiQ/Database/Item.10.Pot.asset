@@ -12,4 +12,277 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 943fd4a767790ee4eba00818ffeaf9ca, type: 3}
   m_Name: Item.10.Pot
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - name: "\u4FDD\u5B58\u306E\u58FA"
+    buyPrice: 800
+    sellPrice: 320
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u8B58\u5225\u306E\u58FA"
+    buyPrice: 800
+    sellPrice: 320
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u5909\u5316\u306E\u58FA"
+    buyPrice: 800
+    sellPrice: 320
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u305F\u3060\u306E\u58FA"
+    buyPrice: 800
+    sellPrice: 320
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u3084\u308A\u3059\u3054\u3057\u306E\u58FA"
+    buyPrice: 800
+    sellPrice: 320
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u63DB\u91D1\u306E\u58FA"
+    buyPrice: 1000
+    sellPrice: 400
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u5E95\u629C\u3051\u306E\u58FA"
+    buyPrice: 1000
+    sellPrice: 400
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u5009\u5EAB\u306E\u58FA"
+    buyPrice: 1000
+    sellPrice: 400
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u624B\u5C01\u3058\u306E\u58FA"
+    buyPrice: 1000
+    sellPrice: 400
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u5272\u308C\u306A\u3044\u58FA"
+    buyPrice: 1000
+    sellPrice: 400
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u304A\u306F\u3089\u3044\u306E\u58FA"
+    buyPrice: 1600
+    sellPrice: 640
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u546A\u3044\u306E\u58FA"
+    buyPrice: 1600
+    sellPrice: 640
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u80CC\u4E2D\u306E\u58FA"
+    buyPrice: 2000
+    sellPrice: 800
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u30C8\u30C9\u306E\u58FA"
+    buyPrice: 2000
+    sellPrice: 800
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u6C34\u9244\u7832\u306E\u58FA"
+    buyPrice: 2000
+    sellPrice: 800
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u7B11\u3044\u306E\u58FA"
+    buyPrice: 2000
+    sellPrice: 800
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u9B54\u7269\u306E\u58FA"
+    buyPrice: 2000
+    sellPrice: 800
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u30D3\u30C3\u30AF\u30EA\u306E\u58FA"
+    buyPrice: 2000
+    sellPrice: 800
+    alwaysIdentified: 1
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u5408\u6210\u306E\u58FA"
+    buyPrice: 6000
+    sellPrice: 2400
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 3
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u5F37\u5316\u306E\u58FA"
+    buyPrice: 10000
+    sellPrice: 4000
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 2
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
+  - name: "\u5F31\u5316\u306E\u58FA"
+    buyPrice: 10000
+    sellPrice: 4000
+    alwaysIdentified: 0
+    attributes:
+    - key: NumberUsedMin
+      value: 2
+    - key: NumberUsedMax
+      value: 5
+    - key: AddBuyPrice
+      value: 100
+    - key: AddSellPrice
+      value: 40
