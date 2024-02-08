@@ -351,10 +351,7 @@ MonoBehaviour:
   rootUIPrefab: {fileID: 8493052003010268428, guid: ed28c3d08c9f3d0488ed524b8b7ea6b0, type: 3}
   quizOptionVisualTreeAsset: {fileID: 9197481963319205126, guid: ecbcf1152ff7215418d6420f06c7bb52, type: 3}
   quizBuilders:
-  - {fileID: 11400000, guid: a4123a214fd18be4c9349514f13cfe81, type: 2}
-  - {fileID: 11400000, guid: 2af6039508bcb2f499a3f7f8f80a35ac, type: 2}
-  - {fileID: 11400000, guid: e064e5f7bdf2f9645ad5606d612e5c86, type: 2}
-  - {fileID: 11400000, guid: e6c375fa53b8cf6489bad464b41380af, type: 2}
+  - {fileID: 11400000, guid: b9804bb5adb88c8428340665ebdfbde4, type: 2}
   headerFormat: "\u7B2C<size=98>{0}</size>\u554F"
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

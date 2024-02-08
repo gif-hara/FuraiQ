@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e47c755bf14f660479485d86ff91632b, type: 3}
+  m_Name: QuizBuilder.BuyPriceNumberUsed.08
+  m_EditorClassIdentifier: 
+  questionFormat: "\u8CB7\u5024\u304C{0}\u306E\u6756\u304C\u3042\u308B\u3002\u6B21\u306E\u3046\u3061\u3069\u308C\u304B\u3002"
+  itemMasterData: {fileID: 11400000, guid: ca8bceb8d5a95844891b61514247fded, type: 2}
+  optionNumber: 4
