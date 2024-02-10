@@ -62,30 +62,41 @@ namespace FuraiQ
                 .Q<Label>("QuestionLabel")
                 .text = quiz.Question;
             visualElement
-                .Q<VisualElement>("EffectCorrectArea")
+                .Q<VisualElement>("Game_EffectCorrectArea")
                 .visible = false;
             visualElement
-                .Q<VisualElement>("EffectIncorrectArea")
+                .Q<VisualElement>("Game_EffectIncorrectArea")
                 .visible = false;
 
             var optionArea = visualElement.Q<VisualElement>("OptionsArea");
             optionArea.Clear();
+            var clickedAction = new Action(() =>
+            {
+            });
             var scope = new CancellationTokenSource();
             foreach (var i in quiz.Options)
             {
                 var option = quizOptionVisualTreeAsset.CloneTree();
                 var button = option.Q<Button>("Button");
+                option.Q<VisualElement>("Option_EffectCorrectArea").visible = false;
+                option.Q<VisualElement>("Option_EffectIncorrectArea").visible = false;
                 button.text = i.message;
                 button.OnClickedAsync()
                     .Subscribe(_ =>
                     {
-                        var effectName = i.isCorrect ? "EffectCorrectArea" : "EffectIncorrectArea";
+                        var effectName = i.isCorrect ? "Game_EffectCorrectArea" : "Game_EffectIncorrectArea";
                         visualElement.Q<VisualElement>(effectName).visible = true;
                         scope.Cancel();
                         scope.Dispose();
+                        clickedAction();
                         source.TrySetResult(i.isCorrect);
                     })
                     .AddTo(scope.Token);
+                clickedAction += () =>
+                {
+                    var effectName = i.isCorrect ? "Option_EffectCorrectArea" : "Option_EffectIncorrectArea";
+                    option.Q<VisualElement>(effectName).visible = true;
+                };
                 optionArea.Add(option);
             }
 
