@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/FuraiQ/Scenes/Game.unity
     guid: b3cb4efd69c690c429ffd34a9eaee72b
+  - enabled: 1
+    path: Assets/FuraiQ/Scenes/SelectQuiz.unity
+    guid: 2baaf6c3e3cbbae45aae4fc9dc92144d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
