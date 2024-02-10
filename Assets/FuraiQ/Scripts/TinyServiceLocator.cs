@@ -5,7 +5,7 @@ using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace IOProject
+namespace FuraiQ
 {
     public class TinyServiceLocator
     {
@@ -55,9 +55,13 @@ namespace IOProject
             namedService.Remove(name);
         }
 
+        public static void Register<T>(T service)
+        {
+            RegisterAsync(service).Forget();
+        }
+
         public static T Resolve<T>()
         {
-            Assert.IsTrue(services.ContainsKey(typeof(T)), $"Service not found: {typeof(T)}");
             return (T)services[typeof(T)].service;
         }
 
@@ -66,6 +70,11 @@ namespace IOProject
             Assert.IsTrue(namedServices.ContainsKey(typeof(T)), $"Service not found: {typeof(T)}");
             Assert.IsTrue(namedServices[typeof(T)].ContainsKey(name), $"Service not found: {typeof(T)}");
             return (T)namedServices[typeof(T)][name].service;
+        }
+
+        public static T TryResolve<T>()
+        {
+            return services.ContainsKey(typeof(T)) ? (T)services[typeof(T)].service : default;
         }
 
         public static void Remove<T>()
