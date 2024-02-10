@@ -18,7 +18,7 @@ namespace FuraiQ
         private VisualTreeAsset quizOptionVisualTreeAsset;
 
         [SerializeField]
-        private QuizBuilder[] quizBuilders;
+        private QuizBuilderPack quizBuilderPack;
 
         [SerializeField]
         private string headerFormat;
@@ -28,10 +28,15 @@ namespace FuraiQ
         async void Start()
         {
             rootUI = Instantiate(rootUIPrefab);
+            var targetQuizBuilderPack = TinyServiceLocator.TryResolve<QuizBuilderPack>();
+            if (targetQuizBuilderPack == null)
+            {
+                targetQuizBuilderPack = quizBuilderPack;
+            }
             var quizNumber = 1;
             while (true)
             {
-                var quizBuilder = quizBuilders[UnityEngine.Random.Range(0, quizBuilders.Length)];
+                var quizBuilder = targetQuizBuilderPack.GetRandom();
                 await ApplyQuizAsync(quizBuilder.Build(), quizNumber);
                 await UniTask.Delay(TimeSpan.FromSeconds(1));
                 quizNumber++;
