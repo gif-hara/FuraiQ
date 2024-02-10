@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3906aefc09fbeba48b4465b73826e425, type: 3}
+  m_Name: QuizBuilderPack.10101
+  m_EditorClassIdentifier: 
+  packName: "\u8CB7\u5024\u58F2\u5024\u554F\u984C \uFF5E\u5DFB\u7269\u7DE8\uFF5E"
+  quizBuilders:
+  - {fileID: 11400000, guid: 2af6039508bcb2f499a3f7f8f80a35ac, type: 2}
+  - {fileID: 11400000, guid: e6c375fa53b8cf6489bad464b41380af, type: 2}
