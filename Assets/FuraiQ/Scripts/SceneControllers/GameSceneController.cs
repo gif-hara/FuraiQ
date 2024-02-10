@@ -2,6 +2,7 @@ using System;
 using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace FuraiQ
@@ -18,7 +19,7 @@ namespace FuraiQ
         private VisualTreeAsset quizOptionVisualTreeAsset;
 
         [SerializeField]
-        private QuizBuilderPack quizBuilderPack;
+        private QuizBuilderPack debugQuizBuilderPack;
 
         [SerializeField]
         private string headerFormat;
@@ -28,19 +29,25 @@ namespace FuraiQ
         async void Start()
         {
             rootUI = Instantiate(rootUIPrefab);
-            var targetQuizBuilderPack = TinyServiceLocator.TryResolve<QuizBuilderPack>();
-            if (targetQuizBuilderPack == null)
+            var quizBuilderPack = TinyServiceLocator.TryResolve<QuizBuilderPack>();
+            if (quizBuilderPack == null)
             {
-                targetQuizBuilderPack = quizBuilderPack;
+                quizBuilderPack = debugQuizBuilderPack;
             }
-            var quizNumber = 1;
-            while (true)
+            var quizNumber = 0;
+            var correctNumber = 0;
+            while (quizNumber < quizBuilderPack.QuizNumberMax)
             {
-                var quizBuilder = targetQuizBuilderPack.GetRandom();
-                await ApplyQuizAsync(quizBuilder.Build(), quizNumber);
+                var quizBuilder = quizBuilderPack.GetRandom();
+                var isCorrect = await ApplyQuizAsync(quizBuilder.Build(), quizNumber);
+                correctNumber += isCorrect ? 1 : 0;
                 await UniTask.Delay(TimeSpan.FromSeconds(1));
                 quizNumber++;
             }
+            var resultData = new ResultData(correctNumber, quizBuilderPack.QuizNumberMax);
+            TinyServiceLocator.Remove<ResultData>();
+            TinyServiceLocator.Register(resultData);
+            SceneManager.LoadScene("Result");
         }
 
         private UniTask<bool> ApplyQuizAsync(IQuiz quiz, int quizNumber)
@@ -49,7 +56,7 @@ namespace FuraiQ
             var visualElement = rootUI.rootVisualElement;
             visualElement
                 .Q<Label>("HeaderLabel")
-                .text = string.Format(headerFormat, quizNumber);
+                .text = string.Format(headerFormat, quizNumber + 1);
             visualElement
                 .Q<Label>("QuestionLabel")
                 .text = quiz.Question;
