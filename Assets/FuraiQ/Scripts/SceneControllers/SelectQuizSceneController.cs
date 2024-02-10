@@ -34,6 +34,7 @@ namespace FuraiQ
                 button.OnClickedAsync()
                     .Subscribe(_ =>
                     {
+                        TinyServiceLocator.Remove<QuizBuilderPack>();
                         TinyServiceLocator.Register(pack);
                         SceneManager.LoadScene("Game");
                     })
