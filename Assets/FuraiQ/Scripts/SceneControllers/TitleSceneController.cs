@@ -1,6 +1,7 @@
 using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace FuraiQ
@@ -19,7 +20,7 @@ namespace FuraiQ
             root.rootVisualElement.Q<Button>("StartButton").OnClickedAsync()
                 .Subscribe(_ =>
                 {
-                    Debug.Log("StartButton Clicked");
+                    SceneManager.LoadScene("Game");
                 })
                 .AddTo(this.destroyCancellationToken);
         }
