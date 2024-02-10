@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.Linq;
 using UnityEngine;
@@ -69,6 +70,7 @@ namespace FuraiQ
 
             var optionArea = visualElement.Q<VisualElement>("OptionsArea");
             optionArea.Clear();
+            var scope = new CancellationTokenSource();
             foreach (var i in quiz.Options)
             {
                 var option = quizOptionVisualTreeAsset.CloneTree();
@@ -79,9 +81,11 @@ namespace FuraiQ
                     {
                         var effectName = i.isCorrect ? "EffectCorrectArea" : "EffectIncorrectArea";
                         visualElement.Q<VisualElement>(effectName).visible = true;
+                        scope.Cancel();
+                        scope.Dispose();
                         source.TrySetResult(i.isCorrect);
                     })
-                    .AddTo(destroyCancellationToken);
+                    .AddTo(scope.Token);
                 optionArea.Add(option);
             }
 
