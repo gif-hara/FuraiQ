@@ -24,8 +24,8 @@ namespace FuraiQ
         void Start()
         {
             var root = Instantiate(rootUIPrefab);
-            var listArea = root.rootVisualElement.Q<VisualElement>("ListArea");
-            listArea.Clear();
+            var listArea = root.rootVisualElement.Q<ListView>("ListArea");
+            var UIElements = new List<VisualElement>();
             foreach (var pack in quizBuilderPacks)
             {
                 var uiElement = quizButtonVisualTreeAsset.CloneTree();
@@ -39,8 +39,11 @@ namespace FuraiQ
                         SceneManager.LoadScene("Game");
                     })
                     .AddTo(this.destroyCancellationToken);
-                listArea.Add(uiElement);
+                UIElements.Add(uiElement);
             }
+            listArea.makeItem = () => new VisualElement();
+            listArea.itemsSource = UIElements;
+            listArea.bindItem = (element, i) => element.Add(UIElements[i]);
         }
     }
 }
