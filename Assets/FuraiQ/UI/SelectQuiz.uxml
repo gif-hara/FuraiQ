@@ -4,6 +4,6 @@
         <ui:VisualElement name="TitleArea" style="flex-grow: 1; justify-content: flex-start; align-items: center; top: 20px; -unity-font-definition: url(&apos;project://database/Assets/FuraiQ/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=c337412bba43b344cb4302bf2559dcf0&amp;type=3#NotoSansJP-Regular&apos;); -unity-font-style: bold; align-self: center; position: absolute;">
             <ui:Label text="クイズ選択" style="font-size: 40px; -unity-text-outline-color: rgb(255, 185, 132); -unity-text-outline-width: 2px; -unity-text-align: upper-center;" />
         </ui:VisualElement>
-        <ui:VisualElement name="ListArea" style="flex-grow: 1; left: 200px; right: 200px; position: absolute; bottom: 100px; top: 100px;" />
+        <ui:ListView focusable="true" name="ListArea" fixed-item-height="50" virtualization-method="DynamicHeight" style="position: absolute; left: 200px; top: 200px; right: 200px; bottom: 100px;" />
     </ui:VisualElement>
 </ui:UXML>
