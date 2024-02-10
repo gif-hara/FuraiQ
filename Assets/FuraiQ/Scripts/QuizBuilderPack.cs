@@ -12,9 +12,14 @@ namespace FuraiQ
         private string packName;
 
         [SerializeField]
+        private int quizNumberMax;
+
+        [SerializeField]
         private QuizBuilder[] quizBuilders;
 
         public string PackName => packName;
+
+        public int QuizNumberMax => quizNumberMax;
 
         public QuizBuilder[] QuizBuilders => quizBuilders;
 
