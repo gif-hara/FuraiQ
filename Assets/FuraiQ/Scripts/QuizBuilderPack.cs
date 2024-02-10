@@ -9,7 +9,12 @@ namespace FuraiQ
     public sealed class QuizBuilderPack : ScriptableObject
     {
         [SerializeField]
+        private string packName;
+
+        [SerializeField]
         private QuizBuilder[] quizBuilders;
+
+        public string PackName => packName;
 
         public QuizBuilder[] QuizBuilders => quizBuilders;
     }
