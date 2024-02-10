@@ -17,5 +17,10 @@ namespace FuraiQ
         public string PackName => packName;
 
         public QuizBuilder[] QuizBuilders => quizBuilders;
+
+        public QuizBuilder GetRandom()
+        {
+            return quizBuilders[Random.Range(0, quizBuilders.Length)];
+        }
     }
 }
