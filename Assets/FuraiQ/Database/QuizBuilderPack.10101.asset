@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: QuizBuilderPack.10101
   m_EditorClassIdentifier: 
   packName: "\u8CB7\u5024\u58F2\u5024\u554F\u984C \uFF5E\u5DFB\u7269\u7DE8\uFF5E"
+  quizNumberMax: 1
   quizBuilders:
   - {fileID: 11400000, guid: 2af6039508bcb2f499a3f7f8f80a35ac, type: 2}
   - {fileID: 11400000, guid: e6c375fa53b8cf6489bad464b41380af, type: 2}
