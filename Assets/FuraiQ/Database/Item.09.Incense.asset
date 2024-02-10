@@ -17,6 +17,8 @@ MonoBehaviour:
     buyPrice: 2000
     sellPrice: 800
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes:
     - key: NumberUsedMin
       value: 2
