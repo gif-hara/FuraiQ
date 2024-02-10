@@ -20,7 +20,7 @@ namespace FuraiQ
             root.rootVisualElement.Q<Button>("StartButton").OnClickedAsync()
                 .Subscribe(_ =>
                 {
-                    SceneManager.LoadScene("Game");
+                    SceneManager.LoadScene("SelectQuiz");
                 })
                 .AddTo(this.destroyCancellationToken);
         }
