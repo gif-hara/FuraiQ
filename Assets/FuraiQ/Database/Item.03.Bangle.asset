@@ -41,7 +41,7 @@ MonoBehaviour:
     blessable: 0
     curseable: 1
     attributes: []
-  - name: "\u4E21\u5203\u306E\u8155\u8F2A"
+  - name: "\u8AF8\u5203\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
