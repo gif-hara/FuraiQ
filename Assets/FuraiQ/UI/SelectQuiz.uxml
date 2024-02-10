@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 255, 255); background-image: none; flex-direction: column; flex-basis: auto; align-items: auto; justify-content: flex-start;">
+        <ui:VisualElement name="Background" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/FuraiQ/Textures/Title.png?fileID=2800000&amp;guid=99fee131fba7c8544ab66c037ac63d29&amp;type=3#Title&apos;); align-items: auto; justify-content: flex-start; flex-direction: column; align-self: auto; position: absolute; flex-basis: auto; width: 100%; height: 100%; -unity-background-image-tint-color: rgb(76, 43, 0);" />
+        <ui:VisualElement name="TitleArea" style="flex-grow: 1; justify-content: flex-start; align-items: center; top: 20px; -unity-font-definition: url(&apos;project://database/Assets/FuraiQ/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=c337412bba43b344cb4302bf2559dcf0&amp;type=3#NotoSansJP-Regular&apos;); -unity-font-style: bold; align-self: center; position: absolute;">
+            <ui:Label text="クイズ選択" style="font-size: 40px; -unity-text-outline-color: rgb(255, 185, 132); -unity-text-outline-width: 2px; -unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ListArea" style="flex-grow: 1; left: 200px; right: 200px; position: absolute; bottom: 100px; top: 100px;" />
+    </ui:VisualElement>
+</ui:UXML>
