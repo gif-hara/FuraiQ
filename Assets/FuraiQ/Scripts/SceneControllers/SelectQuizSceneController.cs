@@ -16,11 +16,30 @@ namespace FuraiQ
         private UIDocument rootUIPrefab;
 
         [SerializeField]
+        private VisualTreeAsset quizButtonVisualTreeAsset;
+
+        [SerializeField]
         private List<QuizBuilderPack> quizBuilderPacks;
 
         void Start()
         {
             var root = Instantiate(rootUIPrefab);
+            var listArea = root.rootVisualElement.Q<VisualElement>("ListArea");
+            listArea.Clear();
+            foreach (var pack in quizBuilderPacks)
+            {
+                var uiElement = quizButtonVisualTreeAsset.CloneTree();
+                var button = uiElement.Q<Button>("Button");
+                button.text = pack.PackName;
+                button.OnClickedAsync()
+                    .Subscribe(_ =>
+                    {
+                        TinyServiceLocator.Register(pack);
+                        SceneManager.LoadScene("Game");
+                    })
+                    .AddTo(this.destroyCancellationToken);
+                listArea.Add(uiElement);
+            }
         }
     }
 }
