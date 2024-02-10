@@ -32,6 +32,16 @@ namespace FuraiQ
         public bool alwaysIdentified;
 
         /// <summary>
+        /// 祝福可能か
+        /// </summary>
+        public bool blessable = true;
+
+        /// <summary>
+        /// 呪われるか
+        /// </summary>
+        public bool curseable = true;
+
+        /// <summary>
         /// 祝福されている場合の買値
         /// </summary>
         public int buyPriceBlessing => buyPrice * 2;
@@ -59,12 +69,48 @@ namespace FuraiQ
         /// <summary>
         /// 通常・祝福・呪いの買値
         /// </summary>
-        public int[] BuyPrices => new int[] { buyPrice, buyPriceBlessing, buyPriceCurse };
+        public int[] BuyPrices
+        {
+            get
+            {
+                var result = new List<int>
+                {
+                    buyPrice,
+                };
+                if (blessable)
+                {
+                    result.Add(buyPriceBlessing);
+                }
+                if (curseable)
+                {
+                    result.Add(buyPriceCurse);
+                }
+                return result.ToArray();
+            }
+        }
 
         /// <summary>
         /// 通常・祝福・呪いの売値
         /// </summary>
-        public int[] SellPrices => new int[] { sellPrice, sellPriceBlessing, sellPriceCurse };
+        public int[] SellPrices
+        {
+            get
+            {
+                var result = new List<int>
+                {
+                    sellPrice,
+                };
+                if (blessable)
+                {
+                    result.Add(sellPriceBlessing);
+                }
+                if (curseable)
+                {
+                    result.Add(sellPriceCurse);
+                }
+                return result.ToArray();
+            }
+        }
 
         public int[] BuyNumberUsedPrices
         {

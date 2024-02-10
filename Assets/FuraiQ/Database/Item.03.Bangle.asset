@@ -17,179 +17,251 @@ MonoBehaviour:
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u30D8\u30BF\u6295\u3052\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u30DC\u30E8\u30E8\u30F3\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u9023\u5C04\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u4E21\u5203\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u75DB\u6068\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u9AD8\u8DF3\u3073\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u7206\u767A\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u5782\u308C\u6D41\u3057\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u91D1\u5782\u308C\u6D41\u3057\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u7F60\u5897\u3057\u306E\u8155\u8F2A"
     buyPrice: 1500
     sellPrice: 600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u3061\u304B\u3089\u306E\u8155\u8F2A"
     buyPrice: 2000
     sellPrice: 800
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u7761\u7720\u3088\u3051\u306E\u8155\u8F2A"
     buyPrice: 2500
     sellPrice: 1000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u6C17\u914D\u5BDF\u77E5\u306E\u8155\u8F2A"
     buyPrice: 2500
     sellPrice: 1000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u9053\u5177\u611F\u77E5\u306E\u8155\u8F2A"
     buyPrice: 2500
     sellPrice: 1000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u5927\u7832\u5F37\u5316\u306E\u8155\u8F2A"
     buyPrice: 2500
     sellPrice: 1000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u546A\u3044\u3088\u3051\u306E\u8155\u8F2A"
     buyPrice: 3000
     sellPrice: 1200
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u6D6E\u904A\u306E\u8155\u8F2A"
     buyPrice: 3000
     sellPrice: 1200
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u9B54\u7269\u547C\u3073\u306E\u8155\u8F2A"
     buyPrice: 3000
     sellPrice: 1200
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u80C3\u62E1\u5F35\u306E\u8155\u8F2A"
     buyPrice: 3500
     sellPrice: 1400
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u80C3\u62E1\u5F35\u306E\u8155\u8F2A"
     buyPrice: 3500
     sellPrice: 1400
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u80C3\u7E2E\u5C0F\u306E\u8155\u8F2A"
     buyPrice: 3500
     sellPrice: 1400
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u5F3E\u304D\u3088\u3051\u306E\u8155\u8F2A"
     buyPrice: 3500
     sellPrice: 1400
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u5024\u5207\u308A\u306E\u8155\u8F2A"
     buyPrice: 3500
     sellPrice: 1400
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u3057\u3042\u308F\u305B\u306E\u8155\u8F2A"
     buyPrice: 4000
     sellPrice: 1600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u6DF7\u4E71\u3088\u3051\u306E\u8155\u8F2A"
     buyPrice: 4000
     sellPrice: 1600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u56DE\u5FA9\u306E\u8155\u8F2A"
     buyPrice: 5000
     sellPrice: 2000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u9306\u3088\u3051\u306E\u8155\u8F2A"
     buyPrice: 5000
     sellPrice: 2000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u900F\u8996\u306E\u8155\u8F2A"
     buyPrice: 5000
     sellPrice: 2000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u88CF\u9053\u306E\u8155\u8F2A"
     buyPrice: 5000
     sellPrice: 2000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u3059\u308C\u3061\u304C\u3044\u306E\u8155\u8F2A"
     buyPrice: 5000
     sellPrice: 2000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u6BD2\u6D88\u3057\u306E\u8155\u8F2A"
     buyPrice: 6500
     sellPrice: 2600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u58C1\u629C\u3051\u306E\u8155\u8F2A"
     buyPrice: 6500
     sellPrice: 2600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u5FCD\u3073\u8DB3\u306E\u8155\u8F2A"
     buyPrice: 6500
     sellPrice: 2600
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u7F60\u5E2B\u306E\u8155\u8F2A"
     buyPrice: 6500
     sellPrice: 3000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []
   - name: "\u767E\u767A\u767E\u4E2D\u306E\u8155\u8F2A"
     buyPrice: 15000
     sellPrice: 6000
     alwaysIdentified: 0
+    blessable: 0
+    curseable: 1
     attributes: []

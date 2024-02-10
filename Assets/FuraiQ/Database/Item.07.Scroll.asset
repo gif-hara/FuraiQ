@@ -17,147 +17,258 @@ MonoBehaviour:
     buyPrice: 300
     sellPrice: 120
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u30D0\u30AF\u30B9\u30A4\u306E\u5DFB\u7269"
     buyPrice: 300
     sellPrice: 120
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u30BE\u30EF\u30BE\u30EF\u306E\u5DFB\u7269"
     buyPrice: 300
     sellPrice: 120
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u771F\u7A7A\u65AC\u308A\u306E\u5DFB\u7269"
     buyPrice: 300
     sellPrice: 120
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u8B58\u5225\u306E\u5DFB\u7269"
     buyPrice: 300
     sellPrice: 120
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u9280\u5C01\u5370\u306E\u5DFB\u7269"
     buyPrice: 300
     sellPrice: 120
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u751F\u7269\u96C6\u5408\u306E\u5DFB\u7269"
     buyPrice: 300
     sellPrice: 120
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u9053\u5177\u5BC4\u305B\u306E\u5DFB\u7269"
     buyPrice: 300
     sellPrice: 120
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u56F0\u3063\u305F\u6642\u306E\u5DFB\u7269"
     buyPrice: 300
     sellPrice: 120
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u5929\u306E\u6075\u307F\u306E\u5DFB\u7269"
     buyPrice: 400
     sellPrice: 160
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u5730\u306E\u6075\u307F\u306E\u5DFB\u7269"
     buyPrice: 400
     sellPrice: 160
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u30E1\u30C3\u30AD\u306E\u5DFB\u7269"
     buyPrice: 400
     sellPrice: 160
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u5370\u5897\u5927\u306E\u5DFB\u7269"
     buyPrice: 400
     sellPrice: 160
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u5370\u6D88\u3057\u306E\u5DFB\u7269"
     buyPrice: 400
     sellPrice: 160
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u304A\u306B\u304E\u308A\u306E\u5DFB\u7269"
     buyPrice: 400
     sellPrice: 160
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u304A\u306F\u3089\u3044\u306E\u5DFB\u7269"
     buyPrice: 600
     sellPrice: 240
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u3042\u304B\u308A\u306E\u5DFB\u7269"
     buyPrice: 600
     sellPrice: 240
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u8FF7\u5B50\u306E\u5DFB\u7269"
     buyPrice: 600
     sellPrice: 240
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u7F60\u6D88\u3057\u306E\u5DFB\u7269"
     buyPrice: 600
     sellPrice: 240
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u9280\u306F\u304C\u3057\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u58FA\u5897\u5927\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u5438\u3044\u51FA\u3057\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u546A\u3044\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u7F60\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u6C34\u304C\u308C\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u9B54\u7269\u90E8\u5C4B\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u5927\u90E8\u5C4B\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u30D0\u30AF\u30C1\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u304F\u3061\u306A\u3057\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u62FE\u3048\u305A\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u6575\u52A0\u901F\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u8131\u51FA\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 1
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u8056\u57DF\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u767D\u7D19\u306E\u5DFB\u7269"
     buyPrice: 1000
     sellPrice: 400
     alwaysIdentified: 1
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u5168\u6EC5\u306E\u5DFB\u7269"
     buyPrice: 3000
     sellPrice: 1200
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u306D\u3060\u3084\u3057\u306E\u5DFB\u7269"
     buyPrice: 10000
     sellPrice: 4000
     alwaysIdentified: 0
+    blessable: 1
+    curseable: 1
+    attributes: []
   - name: "\u306C\u308C\u305F\u5DFB\u7269"
     buyPrice: 200
     sellPrice: 80
     alwaysIdentified: 1
+    blessable: 1
+    curseable: 1
+    attributes: []
