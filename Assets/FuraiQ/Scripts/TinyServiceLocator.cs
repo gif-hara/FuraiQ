@@ -30,8 +30,7 @@ namespace FuraiQ
             var scope = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
             services[typeof(T)] = (service, scope);
             await scope.Token.ToUniTask().Item1;
-            services[typeof(T)].scope.Dispose();
-            services.Remove(typeof(T));
+            RemoveInternal<T>();
         }
 
         public static async UniTaskVoid RegisterAsync<T>(string name, T service, CancellationToken cancellationToken = default)
@@ -47,12 +46,10 @@ namespace FuraiQ
                 Debug.LogError($"Service already registered: {typeof(T)}, name: {name}");
                 return;
             }
-
             var scope = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
             namedService[name] = (service, scope);
             await scope.Token.ToUniTask().Item1;
-            namedService[name].scope.Dispose();
-            namedService.Remove(name);
+            RemoveInternal<T>(name);
         }
 
         public static void Register<T>(T service)
@@ -79,15 +76,33 @@ namespace FuraiQ
 
         public static void Remove<T>()
         {
-            Assert.IsTrue(services.ContainsKey(typeof(T)), $"Service not found: {typeof(T)}");
-            services[typeof(T)].scope.Cancel();
+            RemoveInternal<T>();
         }
 
         public static void Remove<T>(string name)
         {
-            Assert.IsTrue(namedServices.ContainsKey(typeof(T)), $"Service not found: {typeof(T)}");
-            Assert.IsTrue(namedServices[typeof(T)].ContainsKey(name), $"Service not found: {typeof(T)}");
-            namedServices[typeof(T)][name].scope.Cancel();
+            RemoveInternal<T>(name);
+        }
+
+        private static void RemoveInternal<T>()
+        {
+            if (services.ContainsKey(typeof(T)))
+            {
+                services[typeof(T)].scope.Cancel();
+                services.Remove(typeof(T));
+            }
+        }
+
+        private static void RemoveInternal<T>(string name)
+        {
+            if (namedServices.ContainsKey(typeof(T)))
+            {
+                if (namedServices[typeof(T)].ContainsKey(name))
+                {
+                    namedServices[typeof(T)][name].scope.Cancel();
+                    namedServices[typeof(T)].Remove(name);
+                }
+            }
         }
     }
 }
