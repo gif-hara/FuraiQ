@@ -66,6 +66,40 @@ namespace FuraiQ
         /// </summary>
         public int sellPriceCurse => Mathf.FloorToInt(sellPrice * 0.87f);
 
+        public List<(int price, int weight)> GetBuyPriceWeights(int weightStandard, int weightBressed, int weightCursed)
+        {
+            var result = new List<(int price, int weight)>
+            {
+                (buyPrice, weightStandard),
+            };
+            if (blessable)
+            {
+                result.Add((buyPriceBlessing, weightBressed));
+            }
+            if (curseable)
+            {
+                result.Add((buyPriceCurse, weightCursed));
+            }
+            return result;
+        }
+
+        public List<(int price, int weight)> GetSellPriceWeights(int weightStandard, int weightBressed, int weightCursed)
+        {
+            var result = new List<(int price, int weight)>
+            {
+                (sellPrice, weightStandard),
+            };
+            if (blessable)
+            {
+                result.Add((sellPriceBlessing, weightBressed));
+            }
+            if (curseable)
+            {
+                result.Add((sellPriceCurse, weightCursed));
+            }
+            return result;
+        }
+
         /// <summary>
         /// 通常・祝福・呪いの買値
         /// </summary>
