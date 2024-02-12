@@ -13,7 +13,11 @@ MonoBehaviour:
   m_Name: QuizBuilder.Basic.10101
   m_EditorClassIdentifier: 
   question: "\u30C6\u30B9\u30C8\u554F\u984C"
-  correctOption: "\u6B63\u89E3"
+  correctOptions:
+  - "\u6B63\u89E31"
+  - "\u6B63\u89E32"
+  - "\u6B63\u89E33"
+  - "\u6B63\u89E34"
   incorrectOptions:
   - "\u4E0D\u6B63\u89E31"
   - "\u4E0D\u6B63\u89E32"
