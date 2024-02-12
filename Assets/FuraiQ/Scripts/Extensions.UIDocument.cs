@@ -7,7 +7,7 @@ namespace FuraiQ
     /// <summary>
     /// 
     /// </summary>
-    public static class Extensions
+    public static partial class Extensions
     {
         public static IUniTaskAsyncEnumerable<AsyncUnit> OnClickedAsync(this Button self)
         {
