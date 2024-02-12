@@ -115,6 +115,7 @@ namespace FuraiQ
                 option.Q<VisualElement>("Option_EffectCorrectArea").visible = false;
                 option.Q<VisualElement>("Option_EffectIncorrectArea").visible = false;
                 button.text = i.message;
+                button.style.backgroundColor = i.buttonColor;
                 button.OnClickedAsync()
                     .Subscribe(_ =>
                     {
