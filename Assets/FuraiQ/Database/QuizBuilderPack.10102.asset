@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3906aefc09fbeba48b4465b73826e425, type: 3}
   m_Name: QuizBuilderPack.10102
   m_EditorClassIdentifier: 
-  packName: "\u304A\u5E97\u8B58\u5225\u554F\u984C \uFF5E\u8349\u7DE8\uFF5E"
+  packName: " \uFF5E\u8349\u7DE8\uFF5E"
   quizNumberMax: 10
   quizBuilders:
   - {fileID: 11400000, guid: a4123a214fd18be4c9349514f13cfe81, type: 2}

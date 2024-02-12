@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.Linq;
@@ -16,34 +17,51 @@ namespace FuraiQ
         private UIDocument rootUIPrefab;
 
         [SerializeField]
+        private VisualTreeAsset headerVisualTreeAsset;
+
+        [SerializeField]
         private VisualTreeAsset quizButtonVisualTreeAsset;
 
         [SerializeField]
-        private List<QuizBuilderPack> quizBuilderPacks;
+        private List<QuizBuilderPackData> quizDatabase;
 
         void Start()
         {
-            var root = Instantiate(rootUIPrefab);
-            var listArea = root.rootVisualElement.Q<ListView>("ListArea");
+            var ui = Instantiate(rootUIPrefab);
+            var listArea = ui.rootVisualElement.Q<ListView>("ListArea");
             var UIElements = new List<VisualElement>();
-            foreach (var pack in quizBuilderPacks)
+            foreach (var i in quizDatabase)
             {
-                var uiElement = quizButtonVisualTreeAsset.CloneTree();
-                var button = uiElement.Q<Button>("Button");
-                button.text = pack.PackName;
-                button.OnClickedAsync()
-                    .Subscribe(_ =>
-                    {
-                        TinyServiceLocator.Remove<QuizBuilderPack>();
-                        TinyServiceLocator.Register(pack);
-                        SceneManager.LoadScene("Game");
-                    })
-                    .AddTo(this.destroyCancellationToken);
-                UIElements.Add(uiElement);
+                var header = headerVisualTreeAsset.CloneTree();
+                header.Q<Label>("HeaderLabel").text = i.header;
+                UIElements.Add(header);
+                foreach (var pack in i.packs)
+                {
+                    var uiElement = quizButtonVisualTreeAsset.CloneTree();
+                    var button = uiElement.Q<Button>("Button");
+                    button.text = pack.PackName;
+                    button.OnClickedAsync()
+                        .Subscribe(_ =>
+                        {
+                            TinyServiceLocator.Remove<QuizBuilderPack>();
+                            TinyServiceLocator.Register(pack);
+                            SceneManager.LoadScene("Game");
+                        })
+                        .AddTo(this.destroyCancellationToken);
+                    UIElements.Add(uiElement);
+                }
             }
             listArea.makeItem = () => new VisualElement();
             listArea.itemsSource = UIElements;
             listArea.bindItem = (element, i) => element.Add(UIElements[i]);
+        }
+
+        [Serializable]
+        private class QuizBuilderPackData
+        {
+            public string header;
+
+            public List<QuizBuilderPack> packs;
         }
     }
 }

@@ -354,14 +354,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rootUIPrefab: {fileID: 8493052003010268428, guid: 5aea3386380fa1b45b881c76908df6b0, type: 3}
+  headerVisualTreeAsset: {fileID: 9197481963319205126, guid: 3e66794a52de22a4f8c40b36278d786c, type: 3}
   quizButtonVisualTreeAsset: {fileID: 9197481963319205126, guid: ab46a9237f4c3a74399a539f9e2b1223, type: 3}
-  quizBuilderPacks:
-  - {fileID: 11400000, guid: 291a4aa12f52c1146af125d8781fd4d4, type: 2}
-  - {fileID: 11400000, guid: dff3ce29eb9cdbe49a32bff0e3b5dd10, type: 2}
-  - {fileID: 11400000, guid: 09a515c96ebf8c64cb9dffd967eae2b7, type: 2}
-  - {fileID: 11400000, guid: c8088afa74783d649b44eba982d403ed, type: 2}
-  - {fileID: 11400000, guid: 92ac4b2934931994cb5c4da0c51b3693, type: 2}
-  - {fileID: 11400000, guid: e05290245e57ce44186bd3965ca63b51, type: 2}
+  quizDatabase:
+  - header: "\u304A\u5E97\u8B58\u5225\u554F\u984C"
+    packs:
+    - {fileID: 11400000, guid: 291a4aa12f52c1146af125d8781fd4d4, type: 2}
+    - {fileID: 11400000, guid: dff3ce29eb9cdbe49a32bff0e3b5dd10, type: 2}
+    - {fileID: 11400000, guid: 09a515c96ebf8c64cb9dffd967eae2b7, type: 2}
+    - {fileID: 11400000, guid: c8088afa74783d649b44eba982d403ed, type: 2}
+    - {fileID: 11400000, guid: 92ac4b2934931994cb5c4da0c51b3693, type: 2}
+    - {fileID: 11400000, guid: e05290245e57ce44186bd3965ca63b51, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
