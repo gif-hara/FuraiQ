@@ -146,6 +146,52 @@ namespace FuraiQ
             }
         }
 
+        public List<(int price, int weight)> GetBuyNumberUsedPrices(int weightStandard, int weightCursed)
+        {
+            var numberUsedMin = Array.Find(attributes, x => x.key == "NumberUsedMin");
+            Assert.IsNotNull(numberUsedMin, $"numberUsedMin != null, {name}");
+            var numberUsedMax = Array.Find(attributes, x => x.key == "NumberUsedMax");
+            Assert.IsNotNull(numberUsedMax, $"numberUsedMax != null, {name}");
+            var addBuyPrice = Array.Find(attributes, x => x.key == "AddBuyPrice");
+            Assert.IsNotNull(addBuyPrice, $"addBuyPrice != null, {name}");
+            var numberUserMinInt = numberUsedMin.ParseToInt();
+            var numberUserMaxInt = numberUsedMax.ParseToInt();
+            var addBuyPriceInt = addBuyPrice.ParseToInt();
+            var result = new List<(int price, int weight)>();
+            for (var i = numberUserMinInt; i <= numberUserMaxInt; i++)
+            {
+                var price = buyPrice + i * addBuyPriceInt;
+                result.Add((price, weightStandard));
+                result.Add((Mathf.FloorToInt(price * 0.87f), weightCursed));
+            }
+
+            return result;
+        }
+
+        public List<(int price, int weight)> GetSellNumberUsedPrices(int weightStandard, int weightCursed)
+        {
+            var numberUsedMin = Array.Find(attributes, x => x.key == "NumberUsedMin");
+            Assert.IsNotNull(numberUsedMin, $"numberUsedMin != null, {name}");
+            var numberUsedMax = Array.Find(attributes, x => x.key == "NumberUsedMax");
+            Assert.IsNotNull(numberUsedMax, $"numberUsedMax != null, {name}");
+            var addSellPrice = Array.Find(attributes, x => x.key == "AddSellPrice");
+            Assert.IsNotNull(addSellPrice, $"addSellPrice != null, {name}");
+            var numberUserMinInt = numberUsedMin.ParseToInt();
+            var numberUserMaxInt = numberUsedMax.ParseToInt();
+            var addSellPriceInt = addSellPrice.ParseToInt();
+            var result = new List<(int price, int weight)>();
+            for (var i = numberUserMinInt; i <= numberUserMaxInt; i++)
+            {
+                var price = sellPrice + i * addSellPriceInt;
+                result.Add((price, weightStandard));
+                result.Add((Mathf.FloorToInt(price * 0.87f), weightCursed));
+            }
+
+            return result;
+        }
+
+
+
         public int[] BuyNumberUsedPrices
         {
             get

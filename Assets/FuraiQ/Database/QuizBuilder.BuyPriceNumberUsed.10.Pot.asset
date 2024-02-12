@@ -15,3 +15,5 @@ MonoBehaviour:
   questionFormat: "<color=#FF8888><size=60>\u58F2\u5024</size></color>\u304C<color=#EEEE00><size=60>{0}</size></color>\u306E<color=#FF7700><size=60>\u58FA</size></color>\u304C\u3042\u308B\u3002\u6B21\u306E\u3046\u3061\u3069\u308C\u304B\uFF1F"
   itemMasterData: {fileID: 11400000, guid: 96b1fcffd6baa8a4cb2b1e4f03b205b2, type: 2}
   optionNumber: 4
+  weightStandardPrice: 100
+  weightCursedPrice: 10

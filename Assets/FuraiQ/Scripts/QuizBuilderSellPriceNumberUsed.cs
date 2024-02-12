@@ -20,6 +20,12 @@ namespace FuraiQ
         [SerializeField]
         private int optionNumber;
 
+        [SerializeField]
+        private int weightStandardPrice;
+
+        [SerializeField]
+        private int weightCursedPrice;
+
         public override IQuiz Build()
         {
             var shuffledItems = itemMasterData.Items
@@ -28,8 +34,8 @@ namespace FuraiQ
                 .ToList();
             var targetItem = shuffledItems[0];
             shuffledItems.RemoveAt(0);
-            var sellNumberUsedPrices = targetItem.SellNumberUsedPrices;
-            var targetBuyPrice = sellNumberUsedPrices[UnityEngine.Random.Range(0, sellNumberUsedPrices.Length)];
+            var sellPrices = targetItem.GetSellNumberUsedPrices(weightStandardPrice, weightCursedPrice);
+            var targetBuyPrice = sellPrices.Lottery(x => x.weight).price;
             var question = string.Format(questionFormat, targetBuyPrice);
             var options = new List<QuizOption>
             {
