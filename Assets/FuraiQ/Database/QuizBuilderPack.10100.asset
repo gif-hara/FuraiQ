@@ -15,4 +15,4 @@ MonoBehaviour:
   packName: "\u30C6\u30B9\u30C8"
   quizNumberMax: 20
   quizBuilders:
-  - {fileID: 11400000, guid: e6c375fa53b8cf6489bad464b41380af, type: 2}
+  - {fileID: 11400000, guid: 5dbdac212bdbc8b459293c4ecde1be55, type: 2}
