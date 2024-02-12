@@ -14,5 +14,8 @@
         <ui:VisualElement name="Game_EffectIncorrectArea" style="flex-grow: 1; position: absolute; top: 0; left: 0; bottom: 0; right: 0; align-self: center; justify-content: center; display: flex; visibility: hidden;">
             <ui:Label text="不正解" style="-unity-font-definition: url(&apos;project://database/Assets/FuraiQ/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=c337412bba43b344cb4302bf2559dcf0&amp;type=3#NotoSansJP-Regular&apos;); -unity-text-outline-color: rgba(0, 0, 0, 0); -unity-text-outline-width: 0; font-size: 230px; -unity-text-align: middle-center; color: rgb(255, 20, 0); -unity-font-style: bold; rotate: 10deg;" />
         </ui:VisualElement>
+        <ui:VisualElement name="GameStartEffectArea" style="flex-grow: 1; position: absolute; top: 0; left: 0; bottom: 0; right: 0; align-self: center; justify-content: center; display: flex; visibility: visible;">
+            <ui:Label text="始め！" style="-unity-font-definition: url(&apos;project://database/Assets/FuraiQ/Fonts/NotoSansJP-Regular.ttf?fileID=12800000&amp;guid=c337412bba43b344cb4302bf2559dcf0&amp;type=3#NotoSansJP-Regular&apos;); -unity-text-outline-color: rgba(0, 0, 0, 0); -unity-text-outline-width: 0; font-size: 240px; -unity-text-align: middle-center; color: rgb(255, 185, 132); -unity-font-style: bold; rotate: 0; text-overflow: clip;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

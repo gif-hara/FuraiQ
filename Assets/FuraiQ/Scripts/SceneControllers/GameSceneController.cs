@@ -25,11 +25,11 @@ namespace FuraiQ
         [SerializeField]
         private string headerFormat;
 
-        private UIDocument rootUI;
+        private UIDocument ui;
 
         async void Start()
         {
-            rootUI = Instantiate(rootUIPrefab);
+            ui = Instantiate(rootUIPrefab);
             var quizBuilderPack = TinyServiceLocator.TryResolve<QuizBuilderPack>();
             if (quizBuilderPack == null)
             {
@@ -37,6 +37,40 @@ namespace FuraiQ
             }
             var quizNumber = 0;
             var correctNumber = 0;
+            // ゲーム開始
+            ui.rootVisualElement
+                .Q<VisualElement>("HeaderArea")
+                .visible = false;
+            ui.rootVisualElement
+                .Q<VisualElement>("QuestionArea")
+                .visible = false;
+            ui.rootVisualElement
+                .Q<VisualElement>("OptionsArea")
+                .visible = false;
+            ui.rootVisualElement
+                .Q<VisualElement>("Game_EffectCorrectArea")
+                .visible = false;
+            ui.rootVisualElement
+                .Q<VisualElement>("Game_EffectIncorrectArea")
+                .visible = false;
+            ui.rootVisualElement
+                .Q<VisualElement>("GameStartEffectArea")
+                .visible = true;
+            await UniTask.Delay(TimeSpan.FromSeconds(2));
+            ui.rootVisualElement
+                .Q<VisualElement>("GameStartEffectArea")
+                .visible = false;
+            ui.rootVisualElement
+                .Q<VisualElement>("HeaderArea")
+                .visible = true;
+            ui.rootVisualElement
+                .Q<VisualElement>("QuestionArea")
+                .visible = true;
+            ui.rootVisualElement
+                .Q<VisualElement>("OptionsArea")
+                .visible = true;
+
+            // クイズ部分
             while (quizNumber < quizBuilderPack.QuizNumberMax)
             {
                 var quizBuilder = quizBuilderPack.GetRandom();
@@ -54,7 +88,7 @@ namespace FuraiQ
         private UniTask<bool> ApplyQuizAsync(IQuiz quiz, int quizNumber)
         {
             var source = new UniTaskCompletionSource<bool>();
-            var visualElement = rootUI.rootVisualElement;
+            var visualElement = ui.rootVisualElement;
             visualElement
                 .Q<Label>("HeaderLabel")
                 .text = string.Format(headerFormat, quizNumber + 1);
