@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3906aefc09fbeba48b4465b73826e425, type: 3}
+  m_Name: QuizBuilderPack.10201
+  m_EditorClassIdentifier: 
+  packName: "\uFF5E1\u30DA\u30FC\u30B8\u76EE\uFF5E"
+  quizNumberMax: 10
+  quizBuilders:
+  - {fileID: 11400000, guid: 8ccb319f1d04a2b4ba363f72c7ab9e3f, type: 2}
+  - {fileID: 11400000, guid: 91d09a49de0dcfc4c8ab7a8525b96920, type: 2}
+  - {fileID: 11400000, guid: 436ba1a71ca2d4e4b86e42efd0089d6f, type: 2}
+  - {fileID: 11400000, guid: b87e2070364423f4dae3da2d19727b11, type: 2}
+  - {fileID: 11400000, guid: 2939b256492c0424d813bdb71250527f, type: 2}
+  - {fileID: 11400000, guid: df9d674469701f8409a9dce8aeacef9b, type: 2}
+  - {fileID: 11400000, guid: b2a2ac734f56e1448a978f3f87d71ab4, type: 2}
+  - {fileID: 11400000, guid: f499d2f723a82f74289332349cfc0a78, type: 2}
+  - {fileID: 11400000, guid: d83c2efd34c4dc04eacb819cffcf77a8, type: 2}
+  - {fileID: 11400000, guid: 6f2483eeb7bfbda489f245ee4e9dfad4, type: 2}
+  - {fileID: 11400000, guid: db1f97297f4f0b24080478fe1686e6ce, type: 2}
+  - {fileID: 11400000, guid: 3347a57822b6d4d4fbad39de80fe2ffd, type: 2}
+  - {fileID: 11400000, guid: bb94e6601e5ca6d4489ef44f34515870, type: 2}
