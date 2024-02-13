@@ -24,6 +24,9 @@ namespace FuraiQ
         [SerializeField]
         private int optionNumber;
 
+        [SerializeField]
+        private List<Color> colors;
+
         public override IQuiz Build()
         {
             var options = new List<(string option, bool isCorrect)>
@@ -51,14 +54,22 @@ namespace FuraiQ
                 );
             }
             options = options.OrderBy(_ => Guid.NewGuid()).ToList();
+            var quizOptions = new List<QuizOption>();
             var sb = new StringBuilder();
             sb.AppendLine(question);
             sb.AppendLine();
             for (var i = 0; i < options.Count; i++)
             {
-                sb.AppendLine($"{i + 1}. {options[i].option}");
+                var color = $"#{ColorUtility.ToHtmlStringRGB(colors[i])}";
+                sb.AppendLine($"<color={color}>{i + 1}.</color> <u color={color}>{options[i].option}</u>");
+                quizOptions.Add(new QuizOption
+                {
+                    message = $"<size=60>{(i + 1).ToString()}</size>",
+                    isCorrect = options[i].isCorrect,
+                    buttonColor = colors[i]
+                });
             }
-            return new Quiz(sb.ToString(), options.Select((x, index) => new QuizOption { message = (index + 1).ToString(), isCorrect = x.isCorrect }).ToList());
+            return new Quiz(sb.ToString(), quizOptions);
         }
     }
 }
