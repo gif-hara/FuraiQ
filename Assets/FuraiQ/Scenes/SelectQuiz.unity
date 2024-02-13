@@ -365,6 +365,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c8088afa74783d649b44eba982d403ed, type: 2}
     - {fileID: 11400000, guid: 92ac4b2934931994cb5c4da0c51b3693, type: 2}
     - {fileID: 11400000, guid: e05290245e57ce44186bd3965ca63b51, type: 2}
+  - header: "\u3082\u306E\u306E\u3051\u554F\u984C"
+    packs:
+    - {fileID: 11400000, guid: 567a67684f2a9e142b62b80dbc97462b, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
